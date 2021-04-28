@@ -2,42 +2,37 @@ var squadraBasket = [
 
     {
         codiceGiocatore: codiceRandom(6),
-        mediaPunti: media(),
-        percentualeTriple: percentuale()  
+        mediaPunti: generatoRandomNumber(0,50),
+        percentualeTriple: generatoRandomNumber(0,100)  
     },
     {
         codiceGiocatore: codiceRandom(6),
-        mediaPunti: media(),
-        percentualeTriple: percentuale()  
+        mediaPunti: generatoRandomNumber(0,50),
+        percentualeTriple: generatoRandomNumber(0,100)    
     },
     {
         codiceGiocatore: codiceRandom(6),
-        mediaPunti: media(),
-        percentualeTriple: percentuale()  
+        mediaPunti: generatoRandomNumber(0,50),
+        percentualeTriple: generatoRandomNumber(0,100)  
     },
     {
         codiceGiocatore: codiceRandom(6),
-        mediaPunti: media(),
-        percentualeTriple: percentuale()  
+        mediaPunti: generatoRandomNumber(0,50),
+        percentualeTriple: generatoRandomNumber(0,100) 
     },
     {
         codiceGiocatore: codiceRandom(6),
-        mediaPunti: media(),
-        percentualeTriple: percentuale()  
+        mediaPunti: generatoRandomNumber(0,50),
+        percentualeTriple: generatoRandomNumber(0,100)  
     }
 
 ]
 
 console.log(squadraBasket);
 
-function media(){
-    var punti = Math.floor(Math.random()*51);
-    return punti;
-}
-
-function percentuale(){
-    var per100 = Math.floor(Math.random()*101);
-    return per100;
+function generatoRandomNumber(min,max){
+    var num = Math.floor(Math.random()*(max - min + 1)- min);
+    return num;
 }
 
 function codiceRandom(length){
